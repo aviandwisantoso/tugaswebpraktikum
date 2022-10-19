@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan Baju</title>
+  </head>
+  <body style="background-color: lightgrey;">
+    <header align="center">
+      <nav>
+        <fieldset style="background-color: whitesmoke;">
+          <ul style="list-style-type: none">
+            <li>
+              <a href="#">Home |</a>
+            </li>
+            <li>
+              <a href="#">Generate Link |</a>
+            </li>
+            <li>
+              <a href="#">Transaction History |</a>
+            </li>
+            <li>
+              <a href="#">Policy |</a>
+            </li>
+            <li>
+              <a href="#">Logout |</a>
+            </li>
+          </ul>
+        </fieldset>
+      </nav>
+    </header>
+    <br />
+    <main>
+      <form action="hasil-pemesanan.html">
+        <section>
+          <img
+            src="baju.jpg"
+            alt="noimage"
+            width="100"
+          />
+
+          <div>
+            <button type="button">Upload Picture</button>
+          </div>
+        </section>
+        <br />
+        <br />
+        <section>
+          <table>
+            <tr>
+              <td>
+                <label for="title">Title Here : </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  id="title"
+                  name="Title"
+                  placeholder="Title here"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="desc">Description : </label>
+              </td>
+              <td>
+                <textarea
+                  name="Description"
+                  placeholder="Description here"
+                  id="desc"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="account_num">Account Number : </label>
+              </td>
+              <td>
+                <input
+                  name="Account"
+                  id="account_num"
+                  type="number"
+                  placeholder="123-456-789-0"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="bank">Bank : </label>
+              </td>
+              <td>
+                <select name="Bank Name" id="bank">
+                  <option value="bca">BCA</option>
+                  <option value="bri">BRI</option>
+                  <option value="bni">BNI</option>
+                  <option value="bsi">BSI</option>
+                  <option value="cimb">CIMB</option>
+                  <option value="hsbc" selected>HSBC</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="holder">Account Holder : </label>
+              </td>
+              <td>
+                <input type="text" id="holder" placeholder="Name Here" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="transaction">Transaction : </label>
+              </td>
+              <td>
+                <input type="number" id="transaction" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>
+                  * if the transaction is for 3 person, choose-3 from the
+                  drop-down list
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <ul style="list-style-type: none">
+                  <li>
+                    <input type="checkbox" id="send-mb-phone" />
+                    <label for="send-mb-phone">Send to Mobile Phone</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="send-email" />
+                    <label for="send-email">Send to Email</label>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="mobile-phone">Send to Mobile Phone : </label>
+              </td>
+              <td>
+                <input type="number" id="mobile-phone" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">Send to Email : </label>
+              </td>
+              <td>
+                <input type="email" id="email" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <br />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">
+                <button>Generate Nabr Link</button>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
